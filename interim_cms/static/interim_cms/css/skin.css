@@ -1,5 +1,5 @@
-/*  
-    Blue: #0083c2  
+/*
+    Blue: #0083c2
     Grey: #d5d5d5
     Grey Light: #e1e1e1;
 */
@@ -77,8 +77,8 @@ body.grp-login .grp-module-login h1 span.grp-current-page,
     background: #fff;
 }
 
-a.grp-button, 
-button.grp-button, 
+a.grp-button,
+button.grp-button,
 input[type=button].grp-button {
     padding: 5px 22px 5px 10px;
 }
@@ -110,10 +110,10 @@ input[type="submit"],
     background-color: #0083c2!important;
     background: #0083c2!important;
     color: #fff!important;
-    text-shadow: 0 0 0; 
+    text-shadow: 0 0 0;
     border-radius: 0!important;
     -moz-border-radius: 0!important;
-    -webkit-border-radius: 0!important;    
+    -webkit-border-radius: 0!important;
 }
 
 .selector {
@@ -121,5 +121,3 @@ input[type="submit"],
 }
 
 footer { background-image: linear-gradient(#333, #222) !important; }
-
-#raw-web-socket-tile { padding: 8px; }
