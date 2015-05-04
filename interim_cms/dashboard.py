@@ -10,18 +10,9 @@ class LeftDashboard(Dashboard):
     def init_with_context(self, context):
         self.children = []
 
-        self.children.append(modules.ModelList(
-            _('Day to day'),
+        self.children.append(modules.AppList(
             column=1,
-            collapsible=False,
-            exclude=('django.contrib.auth.*',),
-        ))
-
-        self.children.append(modules.ModelList(
-            _('Access control'),
-            column=1,
-            collapsible=False,
-            models=('django.contrib.auth.*',),
+            title='Administration',
         ))
 
 
