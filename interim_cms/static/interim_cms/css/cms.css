@@ -74,7 +74,7 @@ body { overflow-x: hidden; }
         padding-bottom: 10px;
     }
 
-    .g-d-c, 
+    .g-d-c,
     .g-all-c {
         width: auto;
         float: none;
@@ -83,14 +83,14 @@ body { overflow-x: hidden; }
     #grp-content-container > .g-d-c {
     }
 
-    .g-d-12, 
+    .g-d-12,
     .l-2cr-fluid.l-d-12 .c-1 {
         width: auto;
         float: none;
         margin-right: 0;
     }
 
-    .g-d-6, 
+    .g-d-6,
     .l-2cr-fluid.l-d-6 .c-1 {
         width: auto;
     }
@@ -124,25 +124,25 @@ body { overflow-x: hidden; }
         min-width: 0;
     }
 
-    .grp-row input[type="url"], 
-    .grp-row input[type="email"], 
-    .grp-row .vTextField, 
-    .grp-row .vURLField, 
-    .grp-row .vFileBrowseField, 
-    .grp-row textarea, 
-    .grp-row .vLargeTextField, 
-    .grp-row .vXMLLargeTextField, 
+    .grp-row input[type="url"],
+    .grp-row input[type="email"],
+    .grp-row .vTextField,
+    .grp-row .vURLField,
+    .grp-row .vFileBrowseField,
+    .grp-row textarea,
+    .grp-row .vLargeTextField,
+    .grp-row .vXMLLargeTextField,
     .grp-autocomplete-wrapper-m2m {
         width: 100%;
     }
 
-    input[type="url"], 
-    input[type="email"], 
-    input.vTextField, 
-    input.vURLField, 
-    input.vFileBrowseField, 
-    textarea, 
-    .vLargeTextField, 
+    input[type="url"],
+    input[type="email"],
+    input.vTextField,
+    input.vURLField,
+    input.vFileBrowseField,
+    textarea,
+    .vLargeTextField,
     .vXMLLargeTextField {
         width: auto;
     }
@@ -152,7 +152,7 @@ body { overflow-x: hidden; }
         float: none;
     }
 
-    body.grp-change-form #grp-content-container>form, 
+    body.grp-change-form #grp-content-container>form,
     body.grp-change-form #grp-content-container>form>div {
         float: none;
         clear: none;
@@ -172,11 +172,11 @@ body { overflow-x: hidden; }
         border: 0;
     }
 
-    .grp-listing-small li.grp-add-link a, 
-    .grp-listing-small li.grp-add-link>span:first-child, 
-    .grp-listing-small li.grp-change-link a, 
-    .grp-listing-small li.grp-change-link>span:first-child, 
-    .grp-listing-small li.grp-delete-link a, 
+    .grp-listing-small li.grp-add-link a,
+    .grp-listing-small li.grp-add-link>span:first-child,
+    .grp-listing-small li.grp-change-link a,
+    .grp-listing-small li.grp-change-link>span:first-child,
+    .grp-listing-small li.grp-delete-link a,
     .grp-listing-small li.grp-delete-link>span:first-child {
         margin-left: 0;
     }
@@ -199,10 +199,10 @@ body { overflow-x: hidden; }
         position: relative;
     }
 
-        #right-content .g-d-f, 
-        #right-content .g-all-f, 
-        #right-content .g-all-fl, 
-        #right-content .l-2c .c-1, 
+        #right-content .g-d-f,
+        #right-content .g-all-f,
+        #right-content .g-all-fl,
+        #right-content .l-2c .c-1,
         #right-content .l-2cr .c-1 {
             margin-right: 0!important;
         }
@@ -216,3 +216,10 @@ body { overflow-x: hidden; }
     .grp-fixed-footer {
         margin: 0;
     }
+
+/* GRAPHS */
+
+.graph-tile canvas{
+    width: 100% !important;
+    height: auto !important;
+}

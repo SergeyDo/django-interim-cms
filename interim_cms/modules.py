@@ -51,3 +51,27 @@ class ExampleModule(DashboardModuleViewBase):
 class StaticModule(DashboardModuleViewBase):
     """Render a static template"""
     pass
+
+
+class GraphModule(DashboardModule):
+    template = "interim_cms/graph_tile.html"
+    column = 1
+
+    def __init__(self, title=None, graph_type='bar', graph_data=None,
+                 graph_colour="rgba(0, 131, 194, 1)",
+                 graph_highlight_colour=None, **kwargs):
+        self.graph_type = graph_type
+        self.graph_data = graph_data
+        self.graph_colour = graph_colour
+        if graph_highlight_colour is None:
+            self.graph_highlight_colour = graph_colour
+        else:
+            self.graph_highlight_colour = graph_highlight_colour
+        super(GraphModule, self).__init__(title, **kwargs)
+
+    def init_with_context(self, context):
+        if self._initialized:
+            return
+
+        self.children = self.graph_data
+        self._initialized = True

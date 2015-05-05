@@ -33,6 +33,7 @@ class RightDashboard(Dashboard):
     class Media:
         js = (
             "interim_cms/js/cms.js",
+            "interim_cms/js/Chart.min.js",
             "interim_cms/js/jquery.cookie.js",
         )
         css = {
