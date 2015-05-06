@@ -57,11 +57,12 @@ class GraphModule(DashboardModule):
     template = "interim_cms/graph_tile.html"
     column = 1
 
-    def __init__(self, title=None, graph_type='bar', graph_data=None,
-                 graph_colour="rgba(0, 131, 194, 1)",
+    def __init__(self, title=None, graph_type="bar", graph_data=None,
+                 graph_id="graph-tile", graph_colour="rgba(0, 131, 194, 1)",
                  graph_highlight_colour=None, **kwargs):
         self.graph_type = graph_type
         self.graph_data = graph_data
+        self.graph_id = graph_id
         self.graph_colour = graph_colour
         if graph_highlight_colour is None:
             self.graph_highlight_colour = graph_colour

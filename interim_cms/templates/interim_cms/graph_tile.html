@@ -3,7 +3,7 @@
 
 {% block module_content %}
     <div class="graph-tile">
-        <canvas id="graph-canvas"></canvas>
+        <canvas id="{{ module.graph_id }}"></canvas>
     </div>
 
     <script type="text/javascript">
@@ -15,7 +15,7 @@
             responsive: true,
             maintainAspectRatio: true
         };
-        var ctx = $("#graph-canvas").get(0).getContext("2d");
+        var ctx = $("#{{ module.graph_id }}").get(0).getContext("2d");
         var data = {
             labels: {{ module.children.keys|safe }},
             datasets: [
