@@ -57,10 +57,12 @@ class GraphModule(DashboardModule):
     template = "interim_cms/graph_tile.html"
     column = 1
 
-    def __init__(self, title=None, graph_type="bar", graph_data=None,
-                 graph_id="graph-tile", graph_colour="rgba(0, 131, 194, 1)",
+    def __init__(self, title=None, graph_type="bar", graph_labels=None,
+                 graph_data=None, graph_id="graph-tile",
+                 graph_colour="rgba(0, 131, 194, 1)",
                  graph_highlight_colour=None, **kwargs):
         self.graph_type = graph_type
+        self.graph_labels = graph_labels
         self.graph_data = graph_data
         self.graph_id = graph_id
         self.graph_colour = graph_colour
@@ -74,9 +76,8 @@ class GraphModule(DashboardModule):
         if self._initialized:
             return
 
-        sorted_keys = sorted(self.graph_data.keys())
         self.children = {
-            "labels": sorted_keys,
-            "data": [self.graph_data[key] for key in sorted_keys]
+            "labels": self.graph_labels,
+            "data": self.graph_data
         }
         self._initialized = True
