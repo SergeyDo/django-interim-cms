@@ -74,5 +74,9 @@ class GraphModule(DashboardModule):
         if self._initialized:
             return
 
-        self.children = self.graph_data
+        sorted_keys = sorted(self.graph_data.keys())
+        self.children = {
+            "labels": sorted_keys,
+            "data": [self.graph_data[key] for key in sorted_keys]
+        }
         self._initialized = True

@@ -17,7 +17,11 @@
         };
         var ctx = $("#{{ module.graph_id }}").get(0).getContext("2d");
         var data = {
-            labels: {{ module.children.keys|safe }},
+            labels: [
+            {% for label in module.children.labels %}
+            '{{ label }}',
+            {% endfor %}
+            ],
             datasets: [
                 {
                     label: "Data",
@@ -25,7 +29,7 @@
                     strokeColor: "{{ module.graph_colour }}",
                     highlightFill: "{{ module.graph_highlight_colour }}",
                     highlightStroke: "{{ module.graph_highlight_colour }}",
-                    data: {{ module.children.values }}
+                    data: {{ module.children.data }}
                 },
             ]
         };
