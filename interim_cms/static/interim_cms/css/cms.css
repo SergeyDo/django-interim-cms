@@ -106,13 +106,18 @@ body { overflow-x: hidden; }
         margin-right: 20px;
     }
 
-    #grp-content-container .grp-module {
+    .grp-group {
+        margin-bottom: 20px;
+    }
+
+    #grp-content-container .grp-module, #grp-content-container .grp-group {
         clear: none;
         float: left;
     }
 
     #grp-content-container .grp-module,
-    #grp-content-container .g-d-f {
+    #grp-content-container .g-d-f,
+    #grp-content-container .grp-group {
         clear: none;
     }
 
@@ -162,7 +167,7 @@ body { overflow-x: hidden; }
         margin-right: 0;
     }
 
-    body.grp-change-form #grp-content-container>form>div>fieldset {
+    body.grp-change-form #grp-content-container>form>div>fieldset, {
         margin-right: 0;
     }
 
