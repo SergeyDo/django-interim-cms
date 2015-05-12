@@ -115,6 +115,15 @@ body { overflow-x: hidden; }
         float: left;
     }
 
+    #grp-content-container p.errornote {
+        clear: none;
+        float: left;
+    }
+
+    #grp-content-container p.errornote+ul.errorlist:after {
+        clear: none;
+    }
+
     #grp-content-container .grp-module,
     #grp-content-container .g-d-f,
     #grp-content-container .grp-group {
