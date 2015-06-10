@@ -23,7 +23,6 @@ setup(
         "Framework :: Django",
         "Intended Audience :: Developers",
         "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
-        "Private :: Do Not Upload",
     ],
     zip_safe=False,
 )
