@@ -12,7 +12,7 @@ setup(
     packages=find_packages(),
     install_requires=[
         'Django<1.7',
-        'django-grappelli'
+        'django-grappelli<2.6'
     ],
     include_package_data=True,
     classifiers=[
